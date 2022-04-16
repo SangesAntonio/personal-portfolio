@@ -1,0 +1,151 @@
+* {
+    cursor: url("img/cursor.png"), default;
+}
+
+.app-space {
+    background-color: #008080;
+    height: 100vh;
+    position: relative;
+    font-family: 'PT Mono', monospace;
+}
+
+.app-bar {
+    height: 35px;
+    background-color: #C3C3C3;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding-block: 5px;
+}
+
+/*desktop*/
+.desktop-space {
+    padding: 10px 10px;
+}
+
+.desk-icon {
+    width: 100px;
+    text-align: center;
+    margin: 10px 10px;
+    border: 1px solid rgba(161, 160, 160, 0);
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.desk-icon:hover {
+    border: 1px solid rgb(161, 160, 160);
+
+}
+
+.desk-icon img {
+    width: 40px;
+    cursor: pointer;
+
+}
+
+.desk-icon h5 {
+    font-size: 14px;
+    color: white;
+    padding-top: 5px;
+    cursor: pointer;
+
+}
+
+/* finestre pop up */
+.window {
+    width: 40%;
+    background-color: #C0C0C0;
+    padding: 5px 5px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    box-shadow: inset -2px -2px rgb(149, 148, 148);
+
+}
+
+.top-bar-window {
+    background-color: #000080;
+    padding: 2px 3px;
+}
+
+.top-bar-window h5 {
+    color: white;
+    display: inline-block;
+    margin-bottom: 0;
+
+}
+
+.close-button {
+    width: 20px;
+    height: 20px;
+    background-color: #C0C0C0;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+.main-section-window {
+    height: 400px;
+    padding: 20px 30px;
+}
+
+/*footer*/
+.start {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    font-size: 16;
+
+}
+
+.start-img {
+    width: 20px;
+    transform: rotate(-15deg);
+    cursor: pointer;
+}
+
+.element-bar {
+    width: 100%;
+
+}
+
+.hour-bar {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    font-size: 16;
+
+}
+
+.content-bar {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    border-top: 1.5px solid black;
+    border-left: 1px solid black;
+    background-color: white;
+    font-size: 16;
+    min-width: 150px;
+    max-width: 150px;
+    cursor: pointer;
+    background-image: url(img/2945728-polka-dot-pattern-background-gratuito-vettoriale.jpg);
+    background-size: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: inset 2px 2px rgb(187, 187, 187);
+
+}
