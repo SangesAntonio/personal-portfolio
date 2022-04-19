@@ -35,6 +35,8 @@ const iconCont = document.getElementById('icon-contacts');
 const iconPortfolio = document.getElementById('icon-portfolio');
 const windowContact = document.getElementById('window-cont');
 const windowPortfolio = document.getElementById('window-portfolio');
+const windowGame = document.getElementById('window-games')
+const iconGames = document.getElementById('icon-games');
 
 
 iconCont.addEventListener('click', () => {
@@ -42,6 +44,9 @@ iconCont.addEventListener('click', () => {
 })
 iconPortfolio.addEventListener('click', () => {
     windowPortfolio.classList.add('show')
+})
+iconGames.addEventListener('click', () => {
+    windowGame.classList.add('show')
 })
 
 //chiudo finestra 
