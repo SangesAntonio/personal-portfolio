@@ -30,6 +30,15 @@ document.onmousemove = function (e) {
     dragValue.style.top = y + 'px';
 }*/
 
+
+const myTimeout = setTimeout(loader, 3000);
+let loading = false
+
+function loader() {
+    loading = true;
+}
+
+
 //click icone
 const iconCont = document.getElementById('icon-contacts');
 const iconPortfolio = document.getElementById('icon-portfolio');
@@ -53,12 +62,16 @@ iconGames.addEventListener('click', () => {
 
 const closeWindow = document.getElementById('contact-close');
 const closePortfolio = document.getElementById('portfolio-close');
+const closeGame = document.getElementById('game-close');
 
 closeWindow.addEventListener('click', () => {
     windowContact.classList.remove('show')
 })
 closePortfolio.addEventListener('click', () => {
     windowPortfolio.classList.remove('show')
+})
+closeGame.addEventListener('click', () => {
+    windowGame.classList.remove('show')
 })
 // incremento x index
 let z = 10;
@@ -68,11 +81,15 @@ windowContact.addEventListener('click', () => {
 windowPortfolio.addEventListener('click', () => {
     windowPortfolio.style.zIndex = z++;
 })
+windowGame.addEventListener('click', () => {
+    windowGame.style.zIndex = z++;
+})
 
 
 // Make the DIV element draggable:
 dragElement(document.getElementById("window-cont"));
 dragElement(document.getElementById("window-portfolio"));
+dragElement(document.getElementById("window-games"));
 
 function dragElement(elmnt) {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
